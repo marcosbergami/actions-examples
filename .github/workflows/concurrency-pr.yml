@@ -1,9 +1,7 @@
 # we are not actually building/testing with this code, we are just doing a simulation to evaluate the concurrency option
 name: Concurrency PR
 
-on:
-  pull_request:
-    branches: [ main ]
+on: [workflow_dispatch]
 
 concurrency: 
   #group: tests-on-pr-${{ github.head_ref }}
